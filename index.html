@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik Fitness</title>
+</head>
+<link rel="stylesheet" href="/css/style.css">
+<style>
+    /* this whole styling is there in style.css file */
+    /* CSS RESET  */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        margin: 0px;
+        padding: 0px;
+        background: url('/images/fitness-594143_1920.jpg');
+
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        /* border: 2px solid red; */
+        left: 40px;
+        top: -4px;
+    }
+
+    .left img {
+        margin: 0px 47px;
+        width: 43%
+    }
+
+    .left div {
+        line-height: 0px;
+        font-size: 21px;
+
+        text-align: center;
+        color: #000000;
+    }
+
+    .mid {
+        display: block;
+        margin: 0px auto;
+        width: 40%;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 14px;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 19px;
+    }
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 11px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(110, 219, 214);
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        font-weight: bold;
+        border: 2px solid rgb(49 47 47);
+        color: white;
+        padding: 4px 13px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        border-radius: 6px;
+        font-size: 14px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(139, 139, 139);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 44%;
+        border-radius: 20px;
+    }
+
+    .formgroup input {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        width: 443px;
+        padding: 4px;
+        border: 2px solid black;
+        margin: 11px auto;
+        border-radius: 8px;
+        font-size: 19px;
+    }
+
+    .container button {
+        display: block;
+        width: 77%;
+        margin: 20px auto;
+    }
+</style>
+<header class="header">
+
+
+    <!-- left box for logo -->
+    <div class="left">
+        <img src="/images/001-dumbbell.png" alt="">
+        <div>Karthik's Fitness</div>
+
+    </div>
+
+
+    <!-- mid box for navigation bar -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a> </li>
+            <li><a href="#">About Us</a> </li>
+            <li><a href="#">Fitness Calculator</a> </li>
+            <li><a href="#">Contact Us</a> </li>
+        </ul>
+
+    </div>
+
+
+    <!-- right box for buttons -->
+    <div class="right">
+        <booton class="btn">Call Us Now</booton>
+        <booton class="btn">Email us</booton>
+
+    </div>
+</header>
+<div class="container">
+    <h1>Join The Best Gym Of Bengaluru Now</h1>
+    <form action="noaction.php">
+        <div class="formgroup">
+            <input type="text" placeholder="Enter Your Name">
+        </div>
+        <div class="formgroup">
+            <input type="text" placeholder="Enter Your Age">
+        </div>
+        <div class="formgroup">
+            <input type="text" placeholder="Enter Your Gender">
+        </div>
+        <div class="formgroup">
+            <input type="text" placeholder="Enter Your Location">
+        </div>
+        <div class="formgroup">
+            <input type="text" placeholder="Enter Your Email">
+        </div>
+        <div class="formgroup">
+            <input type="text" placeholder="Enter Your Contact Number">
+        </div>
+        <button class="btn">submit</button>
+    </form>
+</div>
+</body>
+
+</html>
